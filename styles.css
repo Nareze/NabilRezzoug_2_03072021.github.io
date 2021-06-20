@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url(polices/Raleway/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(polices/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+
+/*General*/
+
+body, html{
+    background-color: #FFF;
+    font-family: 'Raleway';
+    margin-top: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+/*Heading*/
+
+header img{
+    height: 50px;
+}
+
+header{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul{
+    display: flex;
+    
+}
+
+header li{
+    margin-right: 50px;
+}
+
+header li:first-child{
+    color:#0065FC;
+}
+
+header li:last-child{
+    color:#0065FC;
+}
+
+header p, h3{
+    line-height: 5px;
+}
+
+header h3{
+    padding-top: 10px;
+}
+
+header p{
+    font-size: small;
+}
+
+a:hover{
+    border-top: 2px solid blue;
+    padding-top: 40px;
+}
+
+
+
+/*Footer*/
+
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content:space-between;
+    padding:20px;
+    line-height: 30px;
+}
+
+footer li:first-child{
+    padding-bottom: 15px;
+}
+
+footer li:first-child{
+    font-weight: bold;
+}
+
+footer li{
+    line-height: 28px;
+}
+
+.second-block{
+    margin-right: 50px;
+}
+
+.third-block{
+    margin-right: 350px;
+}
