@@ -13,7 +13,7 @@
 body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
-    margin:0; /* footer background prends toute la largeur */
+    margin: 0px; /* footer background prends toute la largeur */
 }
 header{
     display: flex;
@@ -171,6 +171,11 @@ li{
     border: 2px solid #F2F2F2;
     padding-left: 34px;
 
+}
+
+.filtre, .familial, .animaux{
+    font-weight: bold;
+    font-size: 12px;
 }
 
 .icon1, .icon2{
