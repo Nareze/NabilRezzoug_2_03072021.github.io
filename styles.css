@@ -13,7 +13,7 @@
 body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
-    margin: 0px; /* footer background prends toute la largeur */
+    margin: 0px auto ; /* footer background prends toute la largeur */
 }
 header{
     display: flex;
@@ -22,7 +22,9 @@ header{
     margin-right: 50px;
     margin-left: 50px;
 }
-
+div p.title{
+    margin-left: 20px;
+}
 
 footer{
     display: flex;
@@ -41,6 +43,10 @@ li{
     list-style-type: none;
 }
 
+.test{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 
