@@ -5,15 +5,16 @@
 }
 
 
-/*General-Agencement*/
+
+
+
+/*General*/
 
 body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
-    margin: 0px;
-    padding: 0px;
+    margin:0; /* footer background prends toute la largeur */
 }
-
 header{
     display: flex;
     justify-content:space-between;
@@ -21,6 +22,15 @@ header{
     margin-right: 50px;
     margin-left: 50px;
 }
+
+
+footer{
+    display: flex;
+    justify-content:space-between;
+    padding:5px;
+    line-height: 30px;
+}
+
 
 a:link{
     text-decoration: none;
@@ -32,30 +42,28 @@ li{
 }
 
 
+
+
 /*Search*/
 
-.rubrique-1 img{
+.search img{
     height: 50px;
     position: relative;
     bottom: 15px;
 }
 
-.title{
+.search .title{
     font-weight: bold;
 }
 
-.description{
+.search .description{
     display:block;
-    padding-top: 6px; /* espace entre titre et description*/
+    padding-top: 7px; /* espace entre titre et description*/
     font-size: 12px;
     font-weight: normal;
 }
 
-.rubrique-1 #search{
-    background-color: #0065FC;
-}
-
-.fa-map-marker-alt{
+.search .fa-map-marker-alt{
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     padding: 10px;
@@ -64,14 +72,18 @@ li{
     top:1px;
 }
 
-.rubrique-1 form input{
+.search input{
     padding:9px;
     width: 155px;
     border: 1px solid #F2F2F2;
     border-left: none;
 }
 
-.rubrique-1 #search{
+.search #search-icon{
+    background-color: #0065FC;
+}
+
+.search #search-icon{
     padding: 10px;
     position: relative;
     right: 5px;
@@ -83,93 +95,113 @@ li{
     margin-bottom: 15px;
 }
 
-#search:hover{
-    background-color: #DEEBFF;
+.search #search-icon:hover{
+    background-color: blue;
 }
 
-
-.rubrique-1 h5{
+.search h5{
     font-size: 15px;
     display: inline-block;
-    margin-right: 15px;
 }
 
-.circle-icon{
+.cercle2{
     border: none;
-    padding: 21px;
-    width: 10px;
-    height: 10px;
+    background-color: #DEEBFF ;
+    padding: 10px;
+    border-radius: 50%;
+    height: 8px;
+    width: 5px;
+    margin-right: 10px;
     display: inline-block;
+    position: relative;
+    font-size: 10px;
+}
+
+.cercle1{    
+    padding: 10px;
+    border: none;
+    background-color: #DEEBFF ;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     position: relative;
-    top:7px;
-    right: 12px;
+    left: 33px;
+    top: 1px;
+}
+.filtre{
+    padding: 11px;
+    width: 145px;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    padding-left: 30px;
+}
+
+.filtre:hover, .animaux:hover, .familial:hover{
     background-color: #DEEBFF;
 }
 
-.icon{
-    position:relative;
-    bottom: 7px;
-    right: 8px;
-}
-
-.circle-icon:hover{
-    background-color: #0065FC;
-}
-
-.circle-text{
-    border: 2px solid #F2F2F2;
-    border-radius: 25px;
-    padding: 9px;
-    margin-right: 15px;
-}
-
-.fa-info{
+.fa-child{
     position: relative;
-    bottom: 6px;
     left: 3px;
-    color: #0065FC;
-    font-size: 11px;
 }
 
-.circle-info{
-    border:2px solid #F2F2F2;
-    padding: 7px;
-    height: 10px;
-    width: 10px;
-    display: inline-block;
-    border-radius: 50%;
+.fa-heart{
     position: relative;
-    top: 4px;
-    margin-right: 7px;
+    left: 2px;
+    top: 1px;
+}
+
+.animaux{
+    padding: 10px;
+    width: 175px;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    padding-left: 34px;
+
+}
+
+.familial{
+    padding: 10px;
+    width: 125px;
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    padding-left: 34px;
+
+}
+
+.icon1, .icon2{
+    color: #0065FC
 }
 
 
 
 
 
+/*Sections*/
 
-/*Rubrique*/
-
-.rubrique-2 ul{
+.sections ul{
     display: flex;
     margin-top: 0px;
 }
     
-.rubrique-2 li{
+.sections li{
     margin-right: 50px;
 }
     
-.rubrique-2 li:first-child{
+.sections li:first-child{
     color:#0065FC;
 }
     
-.rubrique-2 li:last-child{
+.sections li:last-child{
     color:#0065FC;
     font-weight: bold;
 }
     
-a:hover{
+.sections a:hover{
     border-top: 2px solid #0065FC;
     padding-top: 43px;
 }
@@ -178,23 +210,47 @@ a:hover{
 
 /*Footer*/
 
- .about{
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content:space-between;
-    padding:10px;
-    line-height: 30px;
+
+.about{
+    width: 100%;
+    background-color: #F2F2F2; 
 }
 
-.about li:first-child{
+footer li:first-child{
     padding-bottom: 10px;
     font-weight: bold;
 }
 
-.about li{
+footer li{
     line-height: 27px;
 }
 
 .third-block{
     margin-right:400px;
+}
+
+
+/* Media queries */
+
+
+@media screen and (max-width:990px) 
+    {
+    footer{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-right: 50px;
+        padding:10px;
+    }
+    .sections{
+        display:none;
+    }
+    header{
+        display: flex;
+        justify-content:space-between;
+        flex-direction: column;
+        margin-top: 45px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
 }
