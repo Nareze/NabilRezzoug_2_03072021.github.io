@@ -8,22 +8,13 @@
 
 
 
-/*General*/
+/* Agencement */
+
 
 body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
-    margin: 0px auto ; /* footer background prends toute la largeur */
-}
-header{
-    display: flex;
-    justify-content:space-between;
-    margin-top: 45px;
-    margin-right: 50px;
-    margin-left: 50px;
-}
-div p.title{
-    margin-left: 20px;
+    margin: 0px; /* footer background prends toute la largeur */
 }
 
 footer{
@@ -33,6 +24,84 @@ footer{
     line-height: 30px;
 }
 
+header{
+    display: flex;
+    justify-content:space-between;
+    margin: 40px 40px 30px 40px;
+}
+
+
+
+
+header img{
+    height: 40px;
+}
+
+header ul{
+    display: flex;
+    margin-top: 0px;
+}
+    
+header li{
+    margin-right: 60px;
+}
+    
+header li:first-child{
+    color:#0065FC;
+}
+    
+header li:last-child{
+    color:#0065FC;
+    font-weight: bold;
+}
+    
+header a:hover{
+    border-top: 2px solid #0065FC;
+    padding-top: 38px;
+}
+
+
+
+
+.filtres{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
+.search{
+    margin-bottom: 5px;
+}
+
+.search, .filtres{
+    margin-left: 40px;
+}
+
+.results{
+     margin-left: 40px;
+}
+
+.economique{
+    position: relative;
+    right: 5px;
+    top: 5px;
+}
+.famille{
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
+.romantique{
+    position: relative;
+    right: 35px;
+    top: 5px;
+}
+
+.animaux-autorisés{
+    position: relative;
+    right: 50px;
+    top: 5px;
+}
 
 a:link{
     text-decoration: none;
@@ -43,20 +112,9 @@ li{
     list-style-type: none;
 }
 
-.test{
-    display: flex;
-    flex-wrap: wrap;
-}
 
+/* Search */
 
-
-/*Search*/
-
-.search img{
-    height: 50px;
-    position: relative;
-    bottom: 15px;
-}
 
 .search .title{
     font-weight: bold;
@@ -67,6 +125,11 @@ li{
     padding-top: 7px; /* espace entre titre et description*/
     font-size: 12px;
     font-weight: normal;
+}
+
+.search form{
+    position: relative;
+    right: 5px;
 }
 
 .search .fa-map-marker-alt{
@@ -110,18 +173,9 @@ li{
     display: inline-block;
 }
 
-.cercle2{
-    border: none;
-    background-color: #DEEBFF ;
-    padding: 10px;
-    border-radius: 50%;
-    height: 8px;
-    width: 5px;
-    margin-right: 10px;
-    display: inline-block;
-    position: relative;
-    font-size: 10px;
-}
+
+/* Filtres */
+
 
 .cercle1{    
     padding: 10px;
@@ -142,9 +196,11 @@ li{
     background-color: white;
     border: 2px solid #F2F2F2;
     padding-left: 30px;
+    font-weight: bold;
+    font-size: 12px;
 }
 
-.filtre:hover, .animaux:hover, .familial:hover{
+.filtre:hover, .chien:hover, .kid:hover{
     background-color: #DEEBFF;
 }
 
@@ -159,64 +215,60 @@ li{
     top: 1px;
 }
 
-.animaux{
+.chien{
     padding: 10px;
     width: 175px;
     border-radius: 25px;
     background-color: white;
     border: 2px solid #F2F2F2;
     padding-left: 34px;
+    font-weight: bold;
+    font-size: 12px;
 
 }
 
-.familial{
+.kid{
     padding: 10px;
     width: 125px;
     border-radius: 25px;
     background-color: white;
     border: 2px solid #F2F2F2;
     padding-left: 34px;
-
-}
-
-.filtre, .familial, .animaux{
     font-weight: bold;
     font-size: 12px;
+
 }
+
+.cercle2{
+    border: 2px solid #F2F2F2;
+    background-color: #DEEBFF ;
+    padding: 5px;
+    border-radius: 50%;
+    height: 8px;
+    width: 8px;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    font-size: 10px;
+    background-color: white;
+}
+
+.icon2{
+    position: relative;
+    left: 2px;
+    bottom: 1px;
+}
+
+.results{
+    position: relative;
+    bottom: 7px;
+    font-size: 14px;
+}
+
 
 .icon1, .icon2{
     color: #0065FC
 }
-
-
-
-
-
-/*Sections*/
-
-.sections ul{
-    display: flex;
-    margin-top: 0px;
-}
-    
-.sections li{
-    margin-right: 50px;
-}
-    
-.sections li:first-child{
-    color:#0065FC;
-}
-    
-.sections li:last-child{
-    color:#0065FC;
-    font-weight: bold;
-}
-    
-.sections a:hover{
-    border-top: 2px solid #0065FC;
-    padding-top: 43px;
-}
-
 
 
 /*Footer*/
@@ -246,22 +298,74 @@ footer li{
 
 @media screen and (max-width:990px) 
     {
-    footer{
-        display: flex;
-        justify-content:space-between;
-        flex-direction: column;
-        margin-right: 50px;
-        padding:10px;
+        header{
+            margin: 0;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #F2F2F2;
+        }
+        header img{
+            margin:20px;
+        }
+
+        .test3{
+            position: relative;
+            bottom: 25px;
+            right: 100px;
+            top: 25px;
+        }
+
+        .test2{
+            position: relative;
+            right: 20px;
+            top: 75px;
+        }
+
+        .test1{
+            position: relative;
+            right: 125px;
+            top: 75px;
+        }
+
+        .results{
+            padding-top: 15px;
+        }
+
+        
+        header a:hover{
+            border-bottom: 2px solid #0065FC;
+            border-top: none;
+            padding-bottom: 10px;
+        }
+
+        .search button{
+            width: 40px;
+            border-radius: 10px !important;
+            position: relative !important;
+            right: 25px !important;
+
+        }
+
+        .search input{
+            width: 150px;
+        }
+
+        .recherche{
+            display: none;
+        }
+
+
+        footer{
+            display: flex;
+            justify-content:space-between;
+            flex-direction: column;
+            margin-right: 50px;
+            padding:10px;
     }
-    .sections{
-        display:none;
-    }
-    header{
-        display: flex;
-        justify-content:space-between;
-        flex-direction: column;
-        margin-top: 45px;
-        margin-right: 50px;
-        margin-left: 50px;
+
+}
+
+@media screen and (min-width:990px) {
+    .fa-search{
+        display: none !important;
     }
 }
