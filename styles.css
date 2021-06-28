@@ -15,6 +15,7 @@ body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
     margin: 0px; /* footer background prends toute la largeur */
+    overflow-x: visible;
 }
 
 footer{
@@ -27,9 +28,14 @@ footer{
 header{
     display: flex;
     justify-content:space-between;
-    margin: 40px 40px 30px 40px;
+    margin: 40px 10px 30px 40px;
 }
 
+
+::placeholder{
+    font-weight: bold;
+    color: #000000;
+}
 
 
 
@@ -271,7 +277,9 @@ li{
 }
 
 
-/*Footer*/
+
+
+/* Footer */
 
 
 .about{
@@ -293,16 +301,168 @@ footer li{
 }
 
 
+
+/* Article */
+
+
+article{
+    margin: 20px 40px 20px 40px;
+}
+
+.row1{
+    display: flex;
+}
+.firstrow{
+    display: flex;
+}
+.secondrow{
+    display: flex;
+}
+.column1{
+    display: flex;
+}
+.container2{
+    display: flex;
+}
+.item2{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+/* continuer code media screen -----------------------------------------------------------------------*/
+
+.column2 img{
+    height: 100px;
+    width: 100px;
+}
+
+.column4 img{
+    height: 100px;
+    width: 100px;
+}
+
+.thridrow img{
+    height: 400px;
+    width: 275px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column3 img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.thridrow, .column3{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+
+    height: 445px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+
+.thridrow h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.column3 h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.column2a img{
+    width: 300px;
+    height: 205px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.column2b img{
+    width: 300px;
+    height: 110px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column2a{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 250px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+    margin-bottom: 40px;
+}
+.column2b{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 155px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+
+.column4a img{
+    width: 300px;
+    height: 175px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column4b img{
+    width: 300px;
+    height: 136px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column4a{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 220px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+    margin-bottom: 40px;
+}
+
+.column4b{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 185px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+
+
+.column2 h5{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.column4 h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+  
+
+
 /* Media queries */
 
 
-@media screen and (max-width:990px) 
+@media screen and (max-width:768px) 
     {
+        body, html{
+            overflow-x: hidden;
+        }
         header{
             margin: 0;
             padding-bottom: 25px;
             border-bottom: 2px solid #F2F2F2;
         }
+
         header img{
             margin:20px;
         }
@@ -310,13 +470,13 @@ footer li{
         .test3{
             position: relative;
             bottom: 25px;
-            right: 100px;
-            top: 25px;
+            right: 180px;
+            top: 30px;
         }
 
         .test2{
             position: relative;
-            right: 20px;
+            right: 100px;
             top: 75px;
         }
 
@@ -330,7 +490,6 @@ footer li{
             padding-top: 15px;
         }
 
-        
         header a:hover{
             border-bottom: 2px solid #0065FC;
             border-top: none;
@@ -342,17 +501,15 @@ footer li{
             border-radius: 10px !important;
             position: relative !important;
             right: 25px !important;
-
         }
 
         .search input{
-            width: 150px;
+            width: 225px;
         }
 
         .recherche{
             display: none;
         }
-
 
         footer{
             display: flex;
@@ -360,12 +517,400 @@ footer li{
             flex-direction: column;
             margin-right: 50px;
             padding:10px;
+        }
+
+        .cercle1{    
+            padding: 8px;
+            border: none;
+            background-color: #DEEBFF ;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            left: 33px;
+            top: 1px;
+        }
+
+        .filtre{
+            padding: 8px;
+            width: 125px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            padding-left: 30px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .chien{
+            padding: 8px;
+            width: 165px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            padding-left: 34px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .kid{
+            padding: 8px;
+            width: 95px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            padding-left: 34px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .filtres{
+            margin-right: -50px; /* icones alignés*/
+        }
+
+        .economique, .famille, .romantique, .animaux-autorisés{
+            margin-right: -10px;
+            margin-top: -10px;
+        }
+
+        .filtres h5{
+            margin-top: 10px;
+        }
+
+        .row1{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .firstrow, .secondrow, .thirdrow{
+            display: flex;
+            flex-direction: column;
+        }
+        .container2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        article{
+            margin: 0;
+        }
+        .column1{
+            background-color: #F2F2F2;
+        }
+
+
+
+
+
+
+
+
+
+        .hebergements2 img{
+            width: 125px;
+            height: 130px;
+            border-radius: 10px;
+
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .hebergements2{
+            background-color: #F2F2F2;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+        .item2{
+            background-color: #FFF;
+            border-radius: 10px;
+            padding-top: 4px;
+            padding-left: 4px;
+            padding-right: 5px;
+            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+            margin-top: -12px;
+        }
+        .desc{
+            margin-top: 30px;
+        }
+        .desc h5{
+            margin-top: -20px;
+        }
+        .item2 p{
+            margin-top: -15px;
+            font-size: 12px;
+        }
+        .pic{
+            margin-left: -20px;
+        }
+
+        .hebergements2 .stars{
+            font-size: 10px;
+        }
+        .stars8{
+            position: relative;
+            top: 30px;
+        }
+        .stars7, .stars9{
+            position: relative;
+            top:45px;
+        }
+        .stars{
+            color: #0065FC;
+        }
+        .stars8 .five{
+            color: #F2F2F2;
+        }
+        .stars9 .five{
+            color: #F2F2F2;
+        }
+
+        .fa-chart-line{
+            margin-left: 120px;
+        
+        }
+        .hebergements2 h3{
+            margin-bottom: 25px;
+        }
+
+        
+/*----------------------------------------------------------------------------*/
+
+
+
+        .hebergements1 img{
+            width: 330px;
+            height: 115px;
+            border-radius: 10px 10px 0px 0px;
+            margin-right: 20px;
+        }
+        .hebergements1{
+            border-radius: 10px;
+            padding: 10px 20px 20px 20px;
+        }
+
+        .hebergements1 h5{
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+        .item1{
+            border-radius: 10px;
+            padding: 3px;
+            background-color: #FFF;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+        }
+
+        .item1 h5{
+            margin-top: 5px;
+            margin-left: 8px;
+        }
+        .item1 p{
+            margin-top: -13px;
+            margin-left: 8px;
+            font-size: 15px;
+        }
+        .price{
+            font-weight: bold;
+        }
+        .hebergements1 .stars{
+            font-size: 10px;
+            position: relative;
+            bottom: 10px;
+            left: 7px;
+        }
+        .stars{
+            color: #0065FC;
+        }
+        .stars1 .five{
+            color: #F2F2F2;
+        }
+        .stars3 .five{
+            color: #F2F2F2;
+        }
+        .stars4 .four{
+            color: #F2F2F2;
+        }
+        .stars4  .five{
+            color: #F2F2F2;
+        }
+        .stars5 .five{
+            color: #F2F2F2;
+        }
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
-}
-
-@media screen and (min-width:990px) {
+@media screen and (min-width:768px) {
     .fa-search{
         display: none !important;
     }
+
+
+
+    
+    /* Continuer code ici ------------------------------------------------------*/
+
+
+.hebergements1 img{
+    width: 235px;
+    height: 115px;
+    border-radius: 10px 10px 0px 0px;
+}
+.hebergements2 img{
+    width: 125px;
+    height: 110px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.hebergements1 h3{
+    margin-left: 15px;
+}
+.hebergements1 h5{
+    margin-left: 15px;
+}
+.hebergements1{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    height: 515px;
+    padding: 10px 20px 20px 20px;
+    margin-right: 40px;
+}
+
+
+
+
+
+
+.item1{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #FFF;
+    margin: 10px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+.item1 h5{
+    margin-top: 2px;
+    margin-left: 8px;
+    font-size: 10px;
+}
+.item1 p{
+    margin-top: -13px;
+    margin-left: 8px;
+    font-size: 10px;
+}
+.price{
+    font-weight: bold;
+}
+
+
+
+
+
+
+.hebergements1 .stars{
+    font-size: 10px;
+    position: relative;
+    bottom: 10px;
+    left: 7px;
+}
+.stars{
+    color: #0065FC;
+}
+.stars1 .five{
+    color: #F2F2F2;
+}
+.stars3 .five{
+    color: #F2F2F2;
+}
+.stars4 .four{
+    color: #F2F2F2;
+}
+.stars4  .five{
+    color: #F2F2F2;
+}
+.stars5 .five{
+    color: #F2F2F2;
+}
+
+
+
+
+
+.hebergements2{
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 10px;
+    height: 505px;
+}
+.item2{
+    background-color: #FFF;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 5px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+.desc{
+    margin-top: 30px;
+}
+.desc h5{
+margin-top: -20px;
+}
+.item2 p{
+    margin-top: -15px;
+    font-size: 12px;
+}
+.pic{
+margin-right: 20px;
+}
+
+
+
+
+
+
+
+.hebergements2 .stars{
+    font-size: 10px;
+    position: relative;
+    top: 17px;
+}
+.stars8 .five{
+    color: #F2F2F2;
+}
+.stars9 .five{
+    color: #F2F2F2;
+}
+.fa-chart-line{
+    margin-left: 180px;
+
+}
+.hebergements2 h3{
+    margin-bottom: 25px;
+}
+
+
+
 }
