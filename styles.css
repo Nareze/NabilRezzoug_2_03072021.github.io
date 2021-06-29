@@ -6,38 +6,34 @@
 
 
 
-
-
-/* Agencement */
+/* */
 
 
 body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
     margin: 0px; /* footer background prends toute la largeur */
-    overflow-x: visible;
 }
 
 footer{
     display: flex;
     justify-content:space-between;
-    padding:5px;
     line-height: 30px;
 }
 
 header{
     display: flex;
     justify-content:space-between;
-    margin: 40px 10px 30px 40px;
+    margin: 40px 25px 40px 25px;
 }
 
-
-::placeholder{
-    font-weight: bold;
-    color: #000000;
+section, article{
+    margin:25px;
 }
 
-
+header li{
+    margin-right: 50px;
+}
 
 header img{
     height: 40px;
@@ -47,44 +43,42 @@ header ul{
     display: flex;
     margin-top: 0px;
 }
-    
-header li{
-    margin-right: 60px;
-}
-    
+
 header li:first-child{
     color:#0065FC;
 }
-    
+   
 header li:last-child{
     color:#0065FC;
     font-weight: bold;
 }
-    
+
 header a:hover{
     border-top: 2px solid #0065FC;
     padding-top: 38px;
 }
 
+li{
+    list-style-type: none;
+}
 
-
+a:link{
+    text-decoration: none;
+    color: inherit;
+}
+  
+::placeholder{
+    font-weight: bold;
+    color: #000000;
+}
 
 .filtres{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 40px;
 }
 
 .search{
     margin-bottom: 5px;
-}
-
-.search, .filtres{
-    margin-left: 40px;
-}
-
-.results{
-     margin-left: 40px;
 }
 
 .economique{
@@ -109,17 +103,8 @@ header a:hover{
     top: 5px;
 }
 
-a:link{
-    text-decoration: none;
-    color: inherit;
-}
 
-li{
-    list-style-type: none;
-}
-
-
-/* Search */
+/* */
 
 
 .search .title{
@@ -285,7 +270,9 @@ li{
 .about{
     width: 100%;
     background-color: #F2F2F2; 
+    padding: 25px;
 }
+
 
 footer li:first-child{
     padding-bottom: 10px;
@@ -305,12 +292,11 @@ footer li{
 /* Article */
 
 
-article{
-    margin: 20px 40px 20px 40px;
-}
+
 
 .row1{
     display: flex;
+    margin-top: 25px;
 }
 .firstrow{
     display: flex;
@@ -323,123 +309,19 @@ article{
 }
 .container2{
     display: flex;
+    margin-bottom: 50px;
 }
 .item2{
     display: flex;
     margin-bottom: 25px;
 }
-
-/* continuer code media screen -----------------------------------------------------------------------*/
-
-.column2 img{
-    height: 100px;
-    width: 100px;
+#voiractivités{
+    margin-top: 50px;
+    font-size: 15px;
 }
 
-.column4 img{
-    height: 100px;
-    width: 100px;
-}
+/* continuer code media screen -----------------------------------------------------------------------MONTER ETOILES et Icone*/
 
-.thridrow img{
-    height: 400px;
-    width: 275px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.column3 img{
-    height: 400px;
-    width: 300px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.thridrow, .column3{
-    margin-right: 25px;
-    border-radius: 10px;
-    background-color: #FFF;
-
-    height: 445px;
-    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
-}
-
-.thridrow h5{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.column3 h5{
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.column2a img{
-    width: 300px;
-    height: 205px;
-    border-radius: 10px 10px 0px 0px;
-
-}
-
-.column2b img{
-    width: 300px;
-    height: 110px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.column2a{
-    margin-right: 25px;
-    border-radius: 10px;
-    background-color: #FFF;
-    height: 250px;
-    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
-    margin-bottom: 40px;
-}
-.column2b{
-    margin-right: 25px;
-    border-radius: 10px;
-    background-color: #FFF;
-    height: 155px;
-    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
-}
-
-.column4a img{
-    width: 300px;
-    height: 175px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.column4b img{
-    width: 300px;
-    height: 136px;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.column4a{
-    margin-right: 25px;
-    border-radius: 10px;
-    background-color: #FFF;
-    height: 220px;
-    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
-    margin-bottom: 40px;
-}
-
-.column4b{
-    margin-right: 25px;
-    border-radius: 10px;
-    background-color: #FFF;
-    height: 185px;
-    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
-}
-
-
-.column2 h5{
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-.column4 h5{
-    margin-top: 10px;
-    margin-left: 10px;
-}
 
 
 
@@ -610,7 +492,6 @@ article{
             width: 125px;
             height: 130px;
             border-radius: 10px;
-
             margin-left: 20px;
             margin-right: 20px;
         }
@@ -618,7 +499,6 @@ article{
             background-color: #F2F2F2;
             padding: 20px;
             border-radius: 10px;
-
         }
         .item2{
             background-color: #FFF;
@@ -627,7 +507,7 @@ article{
             padding-left: 4px;
             padding-right: 5px;
             box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
-            margin-top: -12px;
+            margin-bottom: 15px;
         }
         .desc{
             margin-top: 30px;
@@ -663,13 +543,15 @@ article{
         .stars9 .five{
             color: #F2F2F2;
         }
-
+        .hebergements2{
+            position: relative;
+        }
         .fa-chart-line{
-            margin-left: 120px;
-        
+            position: absolute;
+            right: 25px;
         }
         .hebergements2 h3{
-            margin-bottom: 25px;
+            margin-bottom: 40px;
         }
 
         
@@ -681,23 +563,29 @@ article{
             width: 330px;
             height: 115px;
             border-radius: 10px 10px 0px 0px;
-            margin-right: 20px;
         }
         .hebergements1{
             border-radius: 10px;
-            padding: 10px 20px 20px 20px;
+            padding: 20px;
+        }
+        .item1{
+            border-radius: 10px;
+            padding: 3px;
+            background-color: #FFF;
+            width: 330px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
         }
 
         .hebergements1 h5{
             margin-left: 15px;
             margin-top: 8px;
         }
-        .item1{
-            border-radius: 10px;
-            padding: 3px;
-            background-color: #FFF;
-            margin-bottom: 15px;
-            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+        .hebergements1 h3{
+            margin-bottom: 25px;
+        }
+        .hebergements1 h4{
+            margin-bottom: 5px;
         }
 
         .item1 h5{
@@ -707,7 +595,7 @@ article{
         .item1 p{
             margin-top: -13px;
             margin-left: 8px;
-            font-size: 15px;
+            font-size: 12px;
         }
         .price{
             font-weight: bold;
@@ -737,16 +625,40 @@ article{
             color: #F2F2F2;
         }
 
+/*--------------------------------------*/
 
 
 
+.container2 img{
+    width: 330px;
+    height: 115px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.container2{
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+}
 
 
+.container2 h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
-        
+.item3{
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #FFF;
+    width: 330px;
+    height: 160px;
+    margin-bottom: 15px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
 
-
-
+#voiractivités{
+    margin-left: 25px;
+}
 
 
 
@@ -764,11 +676,6 @@ article{
     }
 
 
-
-    
-    /* Continuer code ici ------------------------------------------------------*/
-
-
 .hebergements1 img{
     width: 235px;
     height: 115px;
@@ -776,11 +683,9 @@ article{
 }
 .hebergements2 img{
     width: 125px;
-    height: 110px;
-    border-radius: 10px;
+    height: 125px;
+    border-radius: 10px 0px 0px 10px;
 }
-
-
 
 
 
@@ -797,9 +702,6 @@ article{
     padding: 10px 20px 20px 20px;
     margin-right: 40px;
 }
-
-
-
 
 
 
@@ -823,9 +725,6 @@ article{
 .price{
     font-weight: bold;
 }
-
-
-
 
 
 
@@ -856,8 +755,6 @@ article{
 
 
 
-
-
 .hebergements2{
     background-color: #F2F2F2;
     padding: 20px;
@@ -875,9 +772,6 @@ article{
 .desc{
     margin-top: 30px;
 }
-.desc h5{
-margin-top: -20px;
-}
 .item2 p{
     margin-top: -15px;
     font-size: 12px;
@@ -889,13 +783,16 @@ margin-right: 20px;
 
 
 
-
-
-
+.desc h5{
+    margin-top: -25px;
+}
+.item2{
+    position: relative;
+}
 .hebergements2 .stars{
     font-size: 10px;
-    position: relative;
-    top: 17px;
+    position: absolute;
+    bottom: 7px;
 }
 .stars8 .five{
     color: #F2F2F2;
@@ -903,13 +800,156 @@ margin-right: 20px;
 .stars9 .five{
     color: #F2F2F2;
 }
+.hebergements2{
+    position: relative;
+}
 .fa-chart-line{
-    margin-left: 180px;
+    position: absolute;
+    right: 25px;
+    
 
 }
 .hebergements2 h3{
     margin-bottom: 25px;
 }
+
+
+
+/*-----------------------*/
+
+
+
+
+.column2 img{
+    height: 100px;
+    width: 100px;
+}
+
+.column4 img{
+    height: 100px;
+    width: 100px;
+}
+
+.thridrow img{
+    height: 400px;
+    width: 275px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column3 img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+
+
+.thridrow, .column3{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+
+    height: 445px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+.column2a{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 250px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+    margin-bottom: 40px;
+}
+.column2b{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 155px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+
+
+
+
+
+
+
+
+
+.thridrow h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.column3 h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.column2 h5{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.column4 h5{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+.column2a img{
+    width: 300px;
+    height: 205px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+.column2b img{
+    width: 300px;
+    height: 110px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.column4a img{
+    width: 300px;
+    height: 175px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column4b img{
+    width: 300px;
+    height: 136px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.column4a{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 220px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+    margin-bottom: 40px;
+}
+
+.column4b{
+    margin-right: 25px;
+    border-radius: 10px;
+    background-color: #FFF;
+    height: 185px;
+    box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+}
+
 
 
 
