@@ -78,7 +78,7 @@ a:link{
 }
 
 .search .description{
-    display:block;
+    display: block;
     padding-top: 7px; /* espace entre titre et description*/
     font-size: 12px;
     font-weight: normal;
