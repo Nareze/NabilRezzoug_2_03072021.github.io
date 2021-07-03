@@ -566,6 +566,8 @@ footer li{
             margin-bottom: 40px;
         }
 
+        
+
 
 /* HEBERGEMENTS PARTIE 1 */
 
@@ -985,4 +987,14 @@ footer li{
             margin-top: 10px;
         }
 
+        
+
+    }
+
+    @media screen and (max-width:1200px){
+        .hebergements2{
+            padding-top: 10px;
+        }
+        
+        
     }
