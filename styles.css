@@ -8,6 +8,8 @@
 /* GENERAL */
 
 
+
+
 body, html{
     background-color: #FFF;
     font-family: 'Raleway', sans-serif;
@@ -60,7 +62,7 @@ header li:first-child{
 
 header li:last-child{
     color:#0065FC;
-    font-weight: bold;
+    font-weight: Rale;
 }
 
 li{
@@ -303,9 +305,9 @@ footer li{
 
 
 @media (min-width: 320px) and (max-width: 765px){
-        body{
+        /* body{
             overflow-x: hidden;
-        }
+        } */
 
 
 /* HEADER */
@@ -730,9 +732,9 @@ footer li{
     /* FILTRES */
 
 
-    body{
+    /*body{
         overflow-x: hidden;
-    }
+    } */
 
     .fa-search{
         display: none !important;
@@ -1054,9 +1056,9 @@ footer li{
 
 /* FILTRES */
 
-        body{
+        /*body{
             overflow-x: hidden;
-        }
+        } */
 
         .fa-search{
             display: none !important;
