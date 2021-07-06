@@ -306,6 +306,7 @@ footer li{
 @media (min-width: 320px) and (max-width: 770px){
         body{
             overflow-x: hidden;
+            width:100%;
         }
 
 
@@ -315,8 +316,14 @@ footer li{
         header{
             margin: 0px;
             height: 130px;
-            width: 395px;
             border-bottom: 2px solid #F2F2F2;
+            overflow: hidden;
+            width:100%;
+        }
+
+        header ul{
+            margin-right: 50px;
+            overflow: hidden;
         }
 
         header img{
