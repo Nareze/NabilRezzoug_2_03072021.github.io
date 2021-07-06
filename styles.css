@@ -300,13 +300,13 @@ footer li{
     margin-right:200px;
 }
 
+
 /* MEDIA QUERIES PHONE */
 
 
 @media (min-width: 320px) and (max-width: 770px){
         body{
             overflow-x: hidden;
-            width:100%;
         }
 
 
@@ -317,13 +317,6 @@ footer li{
             margin: 0px;
             height: 130px;
             border-bottom: 2px solid #F2F2F2;
-            overflow: hidden;
-            width:100%;
-        }
-
-        header ul{
-            margin-right: 50px;
-            overflow: hidden;
         }
 
         header img{
@@ -715,11 +708,14 @@ footer li{
 
     }
 
+
 /* MEDIA QUERIES TABLETS */
 
     
 @media (min-width: 770px) and (max-width: 900px){
 
+
+    /* Section Article Responsive */
 
     .row1, .row2{
         display: flex;
@@ -1043,6 +1039,8 @@ footer li{
 
 @media (min-width: 900px){
 
+
+/* Section Article Responsive */
 
 
 .row1, .row2{
