@@ -305,12 +305,8 @@ footer li{
 
 
 @media (min-width: 320px) and (max-width: 765px){
-        /* body{
-            overflow-x: hidden;
-        } */
-
         body{
-            background-color: blue;
+            overflow-x: hidden;
         }
 
 
@@ -718,10 +714,6 @@ footer li{
     
 @media (min-width: 765px) and (max-width: 900px){
 
-    body{
-        background-color: red;
-    }
-
 
     .row1, .row2{
         display: flex;
@@ -740,9 +732,9 @@ footer li{
     /* FILTRES */
 
 
-    /*body{
+    body{
         overflow-x: hidden;
-    } */
+    }
 
     .fa-search{
         display: none !important;
@@ -1045,12 +1037,8 @@ footer li{
 
 @media (min-width: 900px){
 
-    body{
-        background-color: yellow;
-    }
 
 
-/*
 .row1, .row2{
     display: flex;
     flex-wrap: wrap;
@@ -1063,14 +1051,14 @@ footer li{
 
 .row2 > *{
     margin: 5px;
-}*/
+}
 
 
 /* FILTRES */
 
-        /*body{
+        body{
             overflow-x: hidden;
-        } */
+        }
 
         .fa-search{
             display: none !important;
