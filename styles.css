@@ -300,11 +300,10 @@ footer li{
     margin-right:200px;
 }
 
-
 /* MEDIA QUERIES PHONE */
 
 
-@media (min-width: 320px) and (max-width: 770px){
+/*@media (min-width: 320px) and (max-width: 770px)*/{
         body{
             overflow-x: hidden !important;
         }
@@ -316,7 +315,7 @@ footer li{
         header{
             margin: 0px;
             height: 130px;
-            width: 395px !important;
+            width: 395px;
             border-bottom: 2px solid #F2F2F2;
         }
 
@@ -708,7 +707,6 @@ footer li{
         }
 
     }
-
 
 /* MEDIA QUERIES TABLETS */
 
@@ -1361,3 +1359,413 @@ footer li{
         margin-left: 85px;
     }
 }
+
+/*test*/
+
+@media only screen 
+    and (device-width: 390px) 
+    and (device-height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        body{
+            overflow-x: hidden !important;
+        }
+
+
+/* HEADER */
+
+
+        header{
+            margin: 0px;
+            height: 130px;
+            width: 395px;
+            border-bottom: 2px solid #F2F2F2;
+        }
+
+        header img{
+            margin-left: 22px;
+            margin-top: 20px;
+        }
+
+        .hebergements{
+            position: relative;
+            top: 90px;
+            right: 110px;
+        }
+
+        .activités{
+            position: relative;
+            top: 90px;
+            right: 40px;
+        }
+
+        .inscrire{
+            position: relative;
+            top: 33px;
+            right: 155px;
+        }
+
+        .hovered1{
+            background-color: transparent;
+            display: inline-block;
+            height: 3px;
+            width: 230px;
+            position: relative;
+            top: 7px;
+            right: 40px;
+        }
+        
+        header a:hover + .hovered1{
+            background-color: #0065FC;
+        }
+        
+        .hovered2{
+            background-color: transparent;
+            display: inline-block;
+            height: 3px;
+            width: 230px;
+            position: relative;
+            top: 7px;
+            right: 80px;
+        }
+        
+        header a:hover + .hovered2{
+            background-color: #0065FC;
+        }
+        
+        .hovered3{
+            background-color: transparent;
+            display: inline-block;
+            height: 2px;
+            width: 150px;
+            position: relative;
+            right: 40px;
+        }
+        
+        header a:hover + .hovered3{
+            background-color: #0065FC;
+        }
+
+
+/* RECHERCHE */
+
+        section{
+            margin-left: 20px;
+        }
+
+        .search button{
+            width: 40px;
+            border-radius: 10px !important;
+            position: relative !important;
+            right: 25px !important;
+        }
+
+        .search input{
+            width: 200px;
+        }
+
+        .recherche{
+            display: none;
+        }
+
+        .results{
+            padding-top: 20px;
+        }
+
+
+/* FILTRES ET FOOTER */
+
+
+        .cercle1{    
+            padding: 8px;
+            border: none;
+            background-color: #DEEBFF ;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            position: relative;
+            left: 33px;
+            top: 1px;
+        }
+
+        .coeur, .billet{
+            padding: 8px;
+            width: 125px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            padding-left: 30px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .chien{
+            padding: 8px;
+            width: 165px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            padding-left: 34px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .kid{
+            padding: 8px;
+            width: 95px;
+            border-radius: 25px;
+            background-color: white;
+            border: 2px solid #F2F2F2;
+            padding-left: 34px;
+            font-weight: bold;
+            font-size: 12px;
+        } 
+
+        .filtres{
+            margin-right: -100px;
+        }
+
+        .economique, .famille, .romantique, .animaux-autorisés{
+            margin-right: -5px;
+            margin-top: -5px;
+        }
+
+        .filtres h5{
+            margin-top: 10px;
+        }
+
+        footer{
+            display: flex;
+            flex-direction: column;
+            padding:10px;
+        } 
+
+
+/* HEBERGEMENTS PARTIE 2 */
+
+
+        .row1{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        article{
+            margin:0;
+        }
+
+        .hebergements2{
+            background-color: #F2F2F2;
+        }
+
+        .column1 img{
+            width: 128px;
+            height: 135px;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .column1{
+            background-color: #F2F2F2;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .item2{
+            background-color: #FFF;
+            border-radius: 10px;
+            padding-top: 4px;
+            padding-left: 4px;
+            padding-right: 5px;
+            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+            margin-bottom: 15px;
+        }
+
+        .desc{
+            margin-top: 30px;
+        }
+
+        .desc h5{
+            margin-top: -20px;
+        }
+
+        .item2 p{
+            margin-top: -15px;
+            font-size: 12px;
+        }
+
+        .pic{
+            margin-left: -20px;
+        }
+
+        .column1 .stars{
+            font-size: 10px;
+        }
+
+        .stars8{
+            position: relative;
+            top: 30px;
+        }
+
+        .stars7, .stars9{
+            position: relative;
+            top:45px;
+        }
+
+        .stars{
+            color: #0065FC;
+        }
+
+        .stars8 .five{
+            color: #F2F2F2;
+        }
+
+        .stars9 .five{
+            color: #F2F2F2;
+        }
+        
+        .fa-chart-line{
+            position: absolute;
+            right: 25px;
+        }
+
+        .column1 h3{
+            margin-bottom: 40px;
+        }
+
+        
+
+
+/* HEBERGEMENTS PARTIE 1 */
+
+
+        .firstrow, .secondrow{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hebergements1 img{
+            width: 325px;
+            height: 115px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .hebergements1{
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .item1{
+            border-radius: 10px;
+            padding: 3px;
+            background-color: #FFF;
+            width: 325px;
+            height: 195px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+        }
+
+        .hebergements1 h5{
+            margin-left: 15px;
+            margin-top: 8px;
+        }
+
+        .hebergements1 h3{
+            margin-bottom: 25px;
+        }
+
+        .hebergements1 h4{
+            margin-bottom: 5px;
+        }
+
+        .item1 h5{
+            margin-top: 5px;
+            margin-left: 8px;
+        }
+
+        .item1 p{
+            margin-top: -13px;
+            margin-left: 8px;
+            font-size: 12px;
+        }
+
+        .price{
+            font-weight: bold;
+        }
+
+        .hebergements1 .stars{
+            font-size: 10px;
+            position: relative;
+            bottom: 10px;
+            left: 7px;
+        }
+
+        .stars{
+            color: #0065FC;
+        }
+
+        .stars1 .five{
+            color: #F2F2F2;
+        }
+
+        .stars3 .five{
+            color: #F2F2F2;
+        }
+
+        .stars4 .four{
+            color: #F2F2F2;
+        }
+
+        .stars4  .five{
+            color: #F2F2F2;
+        }
+
+        .stars5 .five{
+            color: #F2F2F2;
+        }
+
+
+/* ACTIVITES */
+
+        article{
+            margin-bottom: -40px;
+        }
+
+        .laptop-pic{
+            display: none;
+        }
+
+        .row2 img{
+            width: 335px;
+            height: 135px;
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        .row2{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 10px 20px 20px 20px;
+        }
+
+        .row2 h5{
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+
+        .item3{
+            border-radius: 10px;
+            padding-top: 0px;
+            background-color: #FFF;
+            width: 335px;
+            height: 190px;
+            margin-bottom: 15px;
+            box-shadow: 2px 2px 7px rgba(206, 206, 206, 0.947);
+        }
+
+        #voiractivités{
+            margin-left: 25px;
+        }
+
+    }
