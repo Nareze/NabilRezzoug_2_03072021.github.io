@@ -304,9 +304,9 @@ footer li{
 /* MEDIA QUERIES PHONE */
 
 
-@media (min-width: 320px) and (max-width: 765px){
+@media (min-width: 320px) and (max-width: 770px){
         body{
-            overflow-x: hidden;
+            overflow-x: hidden !important;
         }
 
 
@@ -316,6 +316,7 @@ footer li{
         header{
             margin: 0px;
             height: 130px;
+            width: 395px !important;
             border-bottom: 2px solid #F2F2F2;
         }
 
@@ -712,7 +713,7 @@ footer li{
 /* MEDIA QUERIES TABLETS */
 
     
-@media (min-width: 765px) and (max-width: 900px){
+@media (min-width: 770px) and (max-width: 900px){
 
 
     .row1, .row2{
