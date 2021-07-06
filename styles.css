@@ -309,6 +309,10 @@ footer li{
             overflow-x: hidden;
         } */
 
+        body{
+            background-color: blue;
+        }
+
 
 /* HEADER */
 
@@ -714,6 +718,10 @@ footer li{
     
 @media (min-width: 765px) and (max-width: 900px){
 
+    body{
+        background-color: red;
+    }
+
 
     .row1, .row2{
         display: flex;
@@ -1037,8 +1045,12 @@ footer li{
 
 @media (min-width: 900px){
 
+    body{
+        background-color: yellow;
+    }
 
 
+/*
 .row1, .row2{
     display: flex;
     flex-wrap: wrap;
@@ -1051,7 +1063,7 @@ footer li{
 
 .row2 > *{
     margin: 5px;
-}
+}*/
 
 
 /* FILTRES */
