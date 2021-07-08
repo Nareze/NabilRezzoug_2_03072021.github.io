@@ -997,6 +997,11 @@ footer li{
 
     /* GENERAL */
 
+    body{
+        overflow-x: hidden;
+    }
+
+
 
     section .mobile{
         display: none;
