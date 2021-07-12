@@ -20,11 +20,6 @@ body{
 /* HEADER */
 
 
-header ul{
-    display: flex;
-    justify-content: space-between;
-}
-
 header img{
     height: 40px;
     padding-bottom: 25px;
@@ -308,8 +303,13 @@ footer li{
 
 
     header{
-        height: 136px;
+        height: 137px;
         border-bottom: 2px solid #F2F2F2;
+    }
+
+    header ul{
+        display: flex;
+        justify-content: space-around;
     }
 
     header img{
@@ -317,9 +317,13 @@ footer li{
         margin-left: 20px;
     }
 
+    .hebergements{
+        position: relative;
+        right: 40px;
+    }
+
     .inscrire{
         position: relative;
-        right: 20px;
         bottom: 75px;
     }
 
@@ -645,6 +649,10 @@ footer li{
         overflow-x: hidden;
     }
 
+    header ul{
+        display: flex;
+    }
+
     section .mobile{
         display: none;
     }
@@ -685,7 +693,7 @@ footer li{
         height: 3px;
         width: 150px;
         position: relative;
-        bottom: 70px;
+        bottom: 69px;
         right:130px;
     }
 
@@ -699,7 +707,7 @@ footer li{
         height: 3px;
         width: 150px;
         position: relative;
-        bottom: 70px;
+        bottom: 69px;
         right:105px;
     }
 
@@ -713,7 +721,7 @@ footer li{
         height: 3px;
         width: 150px;
         position: relative;
-        bottom: 70px;
+        bottom: 69px;
         right:110px;
     }
 
@@ -955,10 +963,6 @@ footer li{
     /* GENERAL */
 
 
-    body{
-        overflow-x: hidden;
-    }
-
     section .mobile{
         display: none;
     }
@@ -968,6 +972,10 @@ footer li{
         justify-content: space-between;
         margin-top: 25px;
         margin-left: 50px;
+    }
+
+    header ul{
+        display: flex;
     }
     
     section{
